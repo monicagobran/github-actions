@@ -2,8 +2,8 @@ name: "Terraform Deploy"
 on:
   workflow_dispatch:
 env:
-  TF_VAR_subscription_id: ${{ secrets.TF_VAR_subscription_id }}
-  TF_VAR_tenant_id: ${{ secrets.TF_VAR_tenant_id }}
+  ARM_SUBSCRIPTION_ID: ${{ secrets.TF_VAR_subscription_id }}
+  ARM_TENANT_ID: ${{ secrets.TF_VAR_tenant_id }}
 jobs:
   terraform:
     name: "Terraform"
